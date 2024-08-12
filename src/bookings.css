@@ -1,0 +1,153 @@
+.book {
+    padding: 150px;
+    font-size: 2rem;
+}
+
+
+.restaurant-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.booking-section {
+    background: var(--bg-color);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--main-color);
+    width: 90%;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.booking-section h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--main-color);
+}
+
+.booking-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-section label {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.booking-section input,
+.booking-section select,
+.booking-section textarea {
+    color: #000;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: ivory;
+}
+
+.booking-section textarea {
+    resize: vertical;
+}
+
+.booking-section button {
+    padding: 15px;
+    background-color: var(--main-color);
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.booking-section button:hover {
+    background-color: var(--main-color);
+}
+
+.existing-bookings {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.existing-bookings h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.booking {
+    background: #000;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.booking p {
+    margin: 0;
+    color: #fff;
+}
+
+.booking button {
+    padding: 10px;
+    margin-left: 10px;
+    background-color: var(--main-color);
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+button:hover{
+    transform: scale(1.0s);
+    box-shadow: 0 0 50px var(--main-color);
+}
+
+
+
+@media (max-width: 575px) {
+    .booking-section {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .restaurant-container {
+        flex-direction: column;
+    }
+}
+
+
+@media (min-width: 576px) {
+    .restaurant-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .booking-section {
+        width: 45%;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .booking-section {
+        width: 40%;
+    }
+}
+
+@media (min-width: 992px) {
+    .booking-section {
+        width: 30%;
+    }
+}
